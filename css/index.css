@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(99,99,107);
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.logo::first-letter{
+    color:red;
+    font-size:40px;
+}
+.head-links{
+    width:50%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.head-links>a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+}
+.login>button{
+    padding: 10px  20px;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.login>button:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+.input{
+    background-color: rgb(248, 248,95);
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 88% 8%;
+    align-items: center;
+}
+.input>input{
+    height: 8vh;
+    font-size: 24px;
+    border: 1px solid rgb(70 70 251);
+}
+.input>input::placeholder{
+    text-align: center;
+}
+.input>button{
+    height: 8vh;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.notes{
+    background-color:rgb(242, 152, 119);
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,20vw);
+    gap: 20px  15px;
+}
+.note{
+    background-color: rgb(2,69,53);
+    color: white;
+    height:10vh ;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    }
+    .text{
+        text-align: justify;
+        padding: 7px;
+        height: 100%;
+        overflow-y: scroll;
+        width: 80%;
+    }
+    .btn{
+        margin-left: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn>button{
+        font-size: 22px;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .btn>button:first-child{
+        color: rgb(2,200,2);
+    }
+    .btn>button:last-child{
+        color: rgb(249, 5,5);
+    }
+
